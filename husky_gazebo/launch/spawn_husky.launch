@@ -65,7 +65,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <!-- </group> -->
 
     <!-- Additional nodes for specific accessories -->
-    <group if="$(optenv HUSKY_REALSENSE_ENABLED 1)">
+    <group if="$(optenv HUSKY_REALSENSE_ENABLED 0)">
       <include file="$(find husky_gazebo)/launch/realsense.launch" />
     </group>
 

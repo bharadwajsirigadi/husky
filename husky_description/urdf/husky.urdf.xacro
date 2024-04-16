@@ -79,7 +79,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <xacro:arg name="laser_3d_secondary_rpy"        default="$(optenv HUSKY_LASER_3D_SECONDARY_RPY 0 0 -3.14159)" />
 
   <!-- Realsense Camera Primary and Secondary -->
-  <xacro:arg name="realsense_enabled"             default="$(optenv HUSKY_REALSENSE_ENABLED 1)" />
+  <xacro:arg name="realsense_enabled"             default="$(optenv HUSKY_REALSENSE_ENABLED 0)" />
   <xacro:arg name="realsense_model"               default="$(optenv HUSKY_REALSENSE_MODEL d435)"/>
   <xacro:arg name="realsense_topic"               default="$(optenv HUSKY_REALSENSE_TOPIC realsense)" />
   <xacro:arg name="realsense_prefix"              default="$(optenv HUSKY_REALSENSE_PREFIX camera)" />
@@ -99,7 +99,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
 
   <!-- BlackflyS Camera Primary and Secondary -->
-  <xacro:arg name="blackfly_enabled"                  default="$(optenv HUSKY_BLACKFLY 0)"/>
+  <xacro:arg name="blackfly_enabled"                  default="$(optenv HUSKY_BLACKFLY 1)"/>
   <xacro:arg name="blackfly_mount_enabled"            default="$(optenv HUSKY_BLACKFLY_MOUNT_ENABLED 1)"/>
   <xacro:arg name="blackfly_mount_angle"              default="$(optenv HUSKY_BLACKFLY_MOUNT_ANGLE 0)"/>
   <xacro:arg name="blackfly_prefix"                   default="$(optenv HUSKY_BLACKFLY_PREFIX blackfly)"/>
