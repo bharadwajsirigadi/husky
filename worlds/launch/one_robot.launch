@@ -1,0 +1,36 @@
+<launch>
+
+    <arg name="robot_namespace" default="/"/>
+    <arg name="x" default="0.0"/>
+    <arg name="y" default="0.0"/>
+    <arg name="z" default="0.0"/>
+    <arg name="yaw" default="0.0"/>
+    <!-- Optionally disable teleop control -->
+    <arg name="joystick" default="true" />
+
+    <include file="$(find husky_control)/launch/control.launch">
+        <arg name="robot_namespace" value="$(arg robot_namespace)"/>
+    </include>
+
+    <include file="$(find husky_control)/launch/teleop.launch">
+        <arg name="joystick" value="$(arg joystick)" />
+    </include>
+
+    <!-- Additional nodes for specific accessories -->
+    <group if="$(optenv HUSKY_REALSENSE_ENABLED 0)">
+        <include file="$(find husky_gazebo)/launch/realsense.launch" />
+    </group>
+    
+    <!-- Spawn robot in gazebo -->
+    <node name="spawn_husky_model" pkg="gazebo_ros" type="spawn_model"
+        args="-x $(arg x)
+              -y $(arg y)
+              -z $(arg z)
+              -Y $(arg yaw)
+              -unpause
+              -urdf
+              -param robot_description
+              -model husky
+              -robot_namespace $(arg robot_namespace)" />
+
+</launch>
