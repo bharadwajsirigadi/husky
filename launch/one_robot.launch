@@ -7,7 +7,7 @@
 
     <arg name="robot_namespace" default="/"/>
     <!-- Optionally disable teleop control -->
-    <arg name="joystick" default="false" />
+    <arg name="joystick" default="true" />
 
     <!-- Add model_name argument -->
     <arg name="model_name" value="husky_$(arg robot_namespace)"/>
