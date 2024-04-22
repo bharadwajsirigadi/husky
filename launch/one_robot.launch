@@ -27,7 +27,7 @@
         </include>
 
         <!-- Additional nodes for specific accessories -->
-        <group if="$(optenv HUSKY_REALSENSE_ENABLED 1)">
+        <group if="$(optenv HUSKY_REALSENSE_ENABLED 0)">
             <include file="$(find husky_gazebo)/launch/realsense.launch" />
         </group>
 

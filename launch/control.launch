@@ -4,7 +4,7 @@
   <arg name="robot_namespace" default="$(optenv ROBOT_NAMESPACE robot)"/>
   <arg name="enable_ekf" default="$(optenv ENABLE_EKF false)"/>
 
-  <arg name="config_extras" default="$(eval optenv('HUSKY_CONFIG_EXTRAS', find('husky_control') + '/config/empty.yaml'))"/>
+  <arg name="config_extras" default="$(eval optenv('HUSKY_CONFIG_EXTRAS', find('multi_husky') + '/config/empty.yaml'))"/>
 
   <!-- Load controller configuration -->
   <rosparam command="load" file="$(find multi_husky)/config/control.yaml" />
@@ -12,7 +12,7 @@
   <!-- Start EKF for localization -->
   <group if="$(arg enable_ekf)" >
     <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
-      <rosparam command="load" file="$(find husky_control)/config/localization.yaml" />
+      <rosparam command="load" file="$(find multi_husky)/config/localization.yaml" />
     </node>
   </group>
 
