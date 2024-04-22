@@ -7,7 +7,7 @@
 
     <arg name="robot_namespace" default="/"/>
     <!-- Optionally disable teleop control -->
-    <arg name="joystick" default="true" />
+    <arg name="joystick" default="false" />
 
     <!-- Add model_name argument -->
     <arg name="model_name" value="husky_$(arg robot_namespace)"/>
@@ -27,7 +27,7 @@
         </include>
 
         <!-- Additional nodes for specific accessories -->
-        <group if="$(optenv HUSKY_REALSENSE_ENABLED 0)">
+        <group if="$(optenv HUSKY_REALSENSE_ENABLED 1)">
             <include file="$(find husky_gazebo)/launch/realsense.launch" />
         </group>
 
