@@ -6544,7 +6544,7 @@
     <model name='stop_light_post_169'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -6565,7 +6565,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -6762,7 +6762,7 @@
     <model name='stop_light_post_170'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -6783,7 +6783,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -6980,7 +6980,7 @@
     <model name='stop_light_post_171'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7001,7 +7001,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7198,7 +7198,7 @@
     <model name='stop_light_post_172'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7219,7 +7219,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7416,7 +7416,7 @@
     <model name='stop_light_post_173'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7437,7 +7437,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7634,7 +7634,7 @@
     <model name='stop_light_post_174'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7655,7 +7655,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7852,7 +7852,7 @@
     <model name='stop_light_post_175'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -7873,7 +7873,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8070,7 +8070,7 @@
     <model name='stop_light_post_176'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8091,7 +8091,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8288,7 +8288,7 @@
     <model name='stop_light_post_177'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8309,7 +8309,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8506,7 +8506,7 @@
     <model name='stop_light_post_178'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8527,7 +8527,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8724,7 +8724,7 @@
     <model name='stop_light_post_179'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8745,7 +8745,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8942,7 +8942,7 @@
     <model name='stop_light_post_180'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -8963,7 +8963,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -9160,7 +9160,7 @@
     <model name='stop_light_post_181'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -9181,7 +9181,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -9378,7 +9378,7 @@
     <model name='stop_light_post_182'>
       <static>1</static>
       <link name='link'>
-        <collision name='post'>
+        <collision name='collision'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
@@ -9399,7 +9399,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='post'>
+        <visual name='visual'>
           <geometry>
             <mesh>
               <uri>model://stop_light_post/meshes/stop_light_post.obj</uri>
