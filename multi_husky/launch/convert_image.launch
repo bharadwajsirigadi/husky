@@ -1,0 +1,11 @@
+<launch>
+  <!-- Launch the image_proc/convert_image node -->
+  <node pkg="image_proc" type="convert_image" name="convert_image">
+    <!-- Set the input and output image topics -->
+    <remap from="image" to="/husky_1/camera/image_raw"/>
+    <remap from="image_out" to="/husky_1/camera/image_mono"/>
+
+    <!-- Set the desired output encoding to 8UC1 (8-bit monochrome) -->
+    <param name="encoding" value="mono8"/>
+  </node>
+</launch>
