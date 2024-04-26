@@ -6,9 +6,12 @@ from gazebo_msgs.msg import LinkStates
 import math
 import tf
 import json
+import csv
 
 from gazebo_msgs.msg import ModelState 
 from gazebo_msgs.srv import SetModelState
+
+GT_PATH = '/home/harsh/catkin_ws/src/multi_husky/multi_husky/scripts/data2.csv'
 class HuskyPathController:
     def __init__(self) -> None:
         rospy.init_node('pqm_driver_node', anonymous=True)
@@ -98,6 +101,11 @@ class HuskyPathController:
         r,p,y = tf.transformations.euler_from_quaternion(quaternion)
 
         self.heading = y
+
+        # Saving data to CSV
+        with open(GT_PATH, 'a', newline='') as csvfile:  # 'a' for appending, 'w' for writing (creates new file)
+            csvwriter = csv.writer(csvfile)
+            csvwriter.writerow([self.curr_pose[0], self.curr_pose[1], quaternion[0], quaternion[1], quaternion[2], quaternion[3]])
 
     # Get direction of turn and magnitude difference between current heading and goal in [-pi,pi] range
     def get_direction(self,a):
@@ -205,7 +213,7 @@ if __name__ == '__main__':
         new_path = [[1,0],[2,0],[2,-1],[2,-2]]
 
         path_json = None
-        with open('/home/harsh/catkin_ws/src/multi_husky/scripts/gz_path_list.json') as f:
+        with open('/home/harsh/catkin_ws/src/multi_husky/multi_husky/scripts/gz_path_list.json') as f:
             path_json = json.load(f)
 
         new_path = path_json['warehouse']
